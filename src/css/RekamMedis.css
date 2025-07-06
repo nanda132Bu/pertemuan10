@@ -1,0 +1,230 @@
+/* Styling utama untuk kontainer pelanggan */
+.pelanggan-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fb;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1465d0;
+  padding: 20px;
+  color: rgb(245, 245, 245);
+  border-radius: 6px;
+}
+
+.header-section h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.btn-tambah {
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-tambah:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling untuk form input pelanggan */
+.form-section {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pelanggan-input-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.pelanggan-input-table th,
+.pelanggan-input-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.pelanggan-input-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.pelanggan-input-table td input,
+.pelanggan-input-table td select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.pelanggan-input-table .btn-submit,
+.pelanggan-input-table .btn-cancel {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.pelanggan-input-table .btn-submit {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pelanggan-input-table .btn-submit:hover {
+  background-color: #45a049;
+}
+
+.pelanggan-input-table .btn-cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.pelanggan-input-table .btn-cancel:hover {
+  background-color: #e53935;
+}
+
+/* Styling untuk tabel pelanggan */
+.pelanggan-grid {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pelanggan-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pelanggan-table th,
+.pelanggan-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.pelanggan-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.pelanggan-table td {
+  background-color: #fafafa;
+}
+
+.pelanggan-table .btn-edit,
+.pelanggan-table .btn-delete {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.pelanggan-table .btn-edit {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pelanggan-table .btn-edit:hover {
+  background-color: #45a049;
+}
+
+.pelanggan-table .btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.pelanggan-table .btn-delete:hover {
+  background-color: #e53935;
+}
+
+/* Empty state when no data is found */
+.empty-state {
+  text-align: center;
+  padding: 20px;
+}
+
+.empty-state p {
+  font-size: 18px;
+  color: #888;
+}
+
+.empty-state button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  width: 400px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-actions .btn-cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.modal-actions .btn-cancel:hover {
+  background-color: #e53935;
+}
+
+.modal-actions .btn-confirm-delete {
+  background-color: #4caf50;
+  color: white;
+}
+
+.modal-actions .btn-confirm-delete:hover {
+  background-color: #45a049;
+}

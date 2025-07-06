@@ -1,0 +1,47 @@
+{
+  "pasien": [
+    {
+      "id": "ad55",
+      "nama": "NANDA",
+      "tanggal": 2,
+      "bulan": 1,
+      "tahun": 2005,
+      "jenisKelamin": "Laki-laki",
+      "alamat": "Jl. Merdeka No. 123, Jakarta",
+      "telepon": "08985885376",
+      "email": "admin@gmail.com",
+      "golonganDarah": "A",
+      "tanggalLahir": "2005-01-02"
+    }
+  ],
+  "pendaftaran": [
+    {
+      "id": "1b99",
+      "nama": "ANDRINO SYADDANI",
+      "tanggal": "2025-07-06",
+      "poli": "Umum"
+    }
+  ],
+  "rekammedis": [
+    {
+      "id": "6118",
+      "nama": "AAA",
+      "diagnosa": "DEMAM",
+      "obat": "PARACETAMOL"
+    },
+    {
+      "id": "cb90",
+      "nama": "RIO",
+      "diagnosa": "MERIANG MASUK ANGIN",
+      "obat": "PARACETAMOL"
+    }
+  ],
+  "dokter": [
+    {
+      "id": "d6ff",
+      "nama": "DR. NANDA",
+      "spesialis": "THT",
+      "telepon": "111"
+    }
+  ]
+}
