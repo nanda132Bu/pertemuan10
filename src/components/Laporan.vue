@@ -5,33 +5,34 @@
     <section v-for="(items, entity) in datasets" :key="entity" class="laporan-section">
       <h2 class="entity-title">Data {{ formatTitle(entity) }}</h2>
 
-      <table v-if="items.length" class="data-table">
-        <thead>
-          <tr>
-            <th v-for="(val, key) in items[0]" :key="key">
-              {{ formatTitle(key) }}
-            </th>
-            <th>Aksi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="item in items" :key="item.id">
-            <td v-for="(val, key) in item" :key="`${item.id}-${key}`">
-              <input
-                v-if="key !== 'id'" 
-                v-model="item[key]" 
-                class="editable-input"
-                :readonly="key === 'id'" 
-              />
-              <span v-else>{{ val }}</span>
-            </td>
-            <td>
-              <button @click="saveEdit(entity, item.id)">Simpan</button>
-              <button @click="deleteItem(entity, item.id)">Hapus</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+ <table v-if="items.length" class="data-table">
+  <thead>
+    <tr>
+      <th v-for="key in Object.keys(items[0])" :key="key">
+        {{ formatTitle(key) }}
+      </th>
+      <th>Aksi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="item in items" :key="item.id">
+      <td v-for="key in Object.keys(items[0])" :key="`${item.id}-${key}`">
+        <span v-if="key === 'id'">{{ item[key] }}</span>
+        <input
+          v-else
+          v-model="item[key]"
+          class="editable-input"
+          :placeholder="formatTitle(key)"
+        />
+      </td>
+      <td>
+        <button @click="saveEdit(entity, item.id)">Simpan</button>
+        <button @click="deleteItem(entity, item.id)">Hapus</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
       <p v-else class="no-data">
         Tidak ada data tersedia untuk {{ formatTitle(entity) }}.
